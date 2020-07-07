@@ -1,0 +1,78 @@
+﻿@*@model IEnumerable<CareerCloud.MVC.ViewModels.CreateJobVM>
+
+@{
+    ViewData["Title"] = "Index";
+
+}*@
+
+
+@*<div>
+    <partial name="~/Views/Shared/CompanyJobs/_Job.cshtml" model="@Model.ToList()" />
+</div>*@
+
+
+@model IEnumerable<CareerCloud.MVC.ViewModels.CreateJobVM>
+
+@{
+    ViewData["Title"] = "Job Listing";
+    // ViewData["Company Name"] = ;
+}
+
+<h2>Jobs Listing</h2>
+<h4>Company: @ViewBag.CompanyName</h4>
+<br />
+
+<p>
+    <a asp-action="Create">Add New Job</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.JobTitle)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProfileCreated)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsInactive)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsCompanyHidden)
+            </th>
+            @*<th>
+                    @Html.DisplayNameFor(model => model.CompanyProfile)
+                </th>*@
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(model => item.JobTitle)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProfileCreated)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IsInactive)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IsCompanyHidden)
+                </td>
+                @*<td>
+                        @Html.DisplayFor(modelItem => item.CompanyProfile.Id)
+                    </td>*@
+
+
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.CompanyId">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.CompanyId">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.CompanyId">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

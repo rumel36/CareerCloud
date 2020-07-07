@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "VVDp6tdx72pVt1L9n0BCh8VbUdEIZFW5MMxFJAsND9FXPjdmXoFfQlE32sWu9EiBl/0AMkSWibs4T4bXA4NDaQ==",
+  "success": true,
+  "projectFilePath": "G:\\Humber\\NET.22-4-Omar-Sharif-N01408020\\NET.22-4-Omar-Sharif-N01408020\\CareerCloud.BusinessLogicLayer\\CareerCloud.BusinessLogicLayer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Omar\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.0.1\\microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512",
+    "C:\\Users\\Omar\\.nuget\\packages\\microsoft.netcore.app.ref\\3.0.0\\microsoft.netcore.app.ref.3.0.0.nupkg.sha512",
+    "C:\\Users\\Omar\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.0.0\\microsoft.windowsdesktop.app.ref.3.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,14 @@
+G:\Humber\NET.22-4-Omar-Sharif-N01408020\NET.22-4-Omar-Sharif-N01408020\CareerCloud.EntityFrameworkDataAccess\bin\Debug\netcoreapp3.0\CareerCloud.EntityFrameworkDataAccess.deps.json
+G:\Humber\NET.22-4-Omar-Sharif-N01408020\NET.22-4-Omar-Sharif-N01408020\CareerCloud.EntityFrameworkDataAccess\bin\Debug\netcoreapp3.0\CareerCloud.EntityFrameworkDataAccess.dll
+G:\Humber\NET.22-4-Omar-Sharif-N01408020\NET.22-4-Omar-Sharif-N01408020\CareerCloud.EntityFrameworkDataAccess\bin\Debug\netcoreapp3.0\CareerCloud.EntityFrameworkDataAccess.pdb
+G:\Humber\NET.22-4-Omar-Sharif-N01408020\NET.22-4-Omar-Sharif-N01408020\CareerCloud.EntityFrameworkDataAccess\bin\Debug\netcoreapp3.0\CareerCloud.DataAccessLayer.dll
+G:\Humber\NET.22-4-Omar-Sharif-N01408020\NET.22-4-Omar-Sharif-N01408020\CareerCloud.EntityFrameworkDataAccess\bin\Debug\netcoreapp3.0\CareerCloud.Pocos.dll
+G:\Humber\NET.22-4-Omar-Sharif-N01408020\NET.22-4-Omar-Sharif-N01408020\CareerCloud.EntityFrameworkDataAccess\bin\Debug\netcoreapp3.0\CareerCloud.DataAccessLayer.pdb
+G:\Humber\NET.22-4-Omar-Sharif-N01408020\NET.22-4-Omar-Sharif-N01408020\CareerCloud.EntityFrameworkDataAccess\bin\Debug\netcoreapp3.0\CareerCloud.Pocos.pdb
+G:\Humber\NET.22-4-Omar-Sharif-N01408020\NET.22-4-Omar-Sharif-N01408020\CareerCloud.EntityFrameworkDataAccess\obj\Debug\netcoreapp3.0\CareerCloud.EntityFrameworkDataAccess.csprojAssemblyReference.cache
+G:\Humber\NET.22-4-Omar-Sharif-N01408020\NET.22-4-Omar-Sharif-N01408020\CareerCloud.EntityFrameworkDataAccess\obj\Debug\netcoreapp3.0\CareerCloud.EntityFrameworkDataAccess.csproj.CoreCompileInputs.cache
+G:\Humber\NET.22-4-Omar-Sharif-N01408020\NET.22-4-Omar-Sharif-N01408020\CareerCloud.EntityFrameworkDataAccess\obj\Debug\netcoreapp3.0\CareerCloud.EntityFrameworkDataAccess.AssemblyInfoInputs.cache
+G:\Humber\NET.22-4-Omar-Sharif-N01408020\NET.22-4-Omar-Sharif-N01408020\CareerCloud.EntityFrameworkDataAccess\obj\Debug\netcoreapp3.0\CareerCloud.EntityFrameworkDataAccess.AssemblyInfo.cs
+G:\Humber\NET.22-4-Omar-Sharif-N01408020\NET.22-4-Omar-Sharif-N01408020\CareerCloud.EntityFrameworkDataAccess\obj\Debug\netcoreapp3.0\CareerCloud.EntityFrameworkDataAccess.csproj.CopyComplete
+G:\Humber\NET.22-4-Omar-Sharif-N01408020\NET.22-4-Omar-Sharif-N01408020\CareerCloud.EntityFrameworkDataAccess\obj\Debug\netcoreapp3.0\CareerCloud.EntityFrameworkDataAccess.dll
+G:\Humber\NET.22-4-Omar-Sharif-N01408020\NET.22-4-Omar-Sharif-N01408020\CareerCloud.EntityFrameworkDataAccess\obj\Debug\netcoreapp3.0\CareerCloud.EntityFrameworkDataAccess.pdb

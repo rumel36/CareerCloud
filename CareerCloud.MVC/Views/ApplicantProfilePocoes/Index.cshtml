@@ -1,0 +1,97 @@
+﻿@model IEnumerable<CareerCloud.MVC.ViewModels.ApplicantProfileVM>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Applicant Profiles</h1>
+
+
+<p>
+    @Html.ActionLink("Create New", "Create", new { Controller = "SecurityLoginPoco" })
+
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ApplicantProfile.CurrentSalary)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ApplicantProfile.CurrentRate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ApplicantProfile.Currency)
+            </th>
+            <th>
+                Address
+                @*@Html.DisplayNameFor(model => model.Country)*@
+            </th>
+            @*<th>
+                    @Html.DisplayNameFor(model => model.Province)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Street)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.City)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.PostalCode)
+                </th>*@
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ApplicantProfile.CurrentSalary)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ApplicantProfile.CurrentRate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ApplicantProfile.Currency)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ApplicantProfile.Street)
+                @Html.DisplayFor(modelItem => item.ApplicantProfile.City)
+                @Html.DisplayFor(modelItem => item.ApplicantProfile.Province)
+                @Html.DisplayFor(modelItem => item.ApplicantProfile.Country)
+                @Html.DisplayFor(modelItem => item.ApplicantProfile.PostalCode)
+            </td>
+
+            @*<td>
+            @Html.DisplayFor(modelItem => item.Province)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Street)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.City)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PostalCode)
+        </td>*@
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>|
+                <a asp-controller="ApplicantEducationPocoes" asp-action="Index" asp-route-id="@item.Id">Education</a>|
+                <a asp-controller="ApplicantSkillPocoes" asp-action="Index" asp-route-id="@item.Id">Skills</a>|
+                <a asp-controller="ApplicantWorkHistoryPoco" asp-action="Index" asp-route-id="@item.Id">Work History</a>|
+                <a asp-controller="ApplicantResumePoco" asp-action="Index" asp-route-id="@item.Id">Resume</a>|
+                <a asp-controller="ApplicantJobApplicationPoco" asp-action="Index" asp-route-id="@item.Id">Job Applied</a>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>

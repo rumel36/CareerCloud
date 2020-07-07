@@ -1,0 +1,10 @@
+﻿@model IEnumerable<CareerCloud.Pocos.ApplicantJobApplicationPoco>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div>
+    <partial name="~/Views/Shared/ApplicantJobs/_JobApplication.cshtml" model="@Model.ToList()" />
+</div>
+

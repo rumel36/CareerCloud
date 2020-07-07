@@ -1,0 +1,67 @@
+﻿@*@model IEnumerable<CareerCloud.MVC.ViewModels.CompanyProfileVM>*@
+
+@model IEnumerable<CareerCloud.MVC.ViewModels.CompanyProfileVM>
+
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Company Profiles</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CompanyName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CompanyWebsite)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ContactName)
+
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ContactPhone)
+            </th>
+            @*<th>
+                    @Html.DisplayNameFor(model => model.CompanyLogo)
+                </th>*@
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CompanyName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CompanyWebsite)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ContactName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ContactPhone)
+                </td>
+                @*<td>
+                        @Html.DisplayFor(modelItem => item.CompanyLogo)
+                    </td>*@
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    <a asp-controller="CompanyDescriptionPoco" asp-action="Index" asp-route-id="@item.Id">Description</a>|
+                    <a asp-controller="CompanyJobPoco" asp-action="PostedJob" asp-route-id="@item.Id">Posted Job</a>|
+                    @*<a asp-controller="CompanyLocationPocoes" asp-action="Index" asp-route-id="@item.Id">Location</a>|*@
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
